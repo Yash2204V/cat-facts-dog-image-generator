@@ -6,8 +6,7 @@ console.log("Hey! js is working");
 async function animalName() {
   const response = await fetch("/animalname");
   const data = await response.json();
-    const animalName = data.fact;
-  //   const animalName = data[0].join(" ");
+  const animalName = data.fact;
   catFact.textContent = animalName;
 }
 
@@ -19,13 +18,13 @@ async function animalImage() {
 
   console.log(dataimage);
   let img = document.createElement("img");
-  if(document.querySelector('#dogImage') !== null){
-    let image_x = document.getElementById('dogImage');
+  if (document.querySelector("#dogImage") !== null) {
+    let image_x = document.getElementById("dogImage");
     image_x.parentNode.removeChild(image_x);
   }
 
   img.src = dataimage;
-  img.id ='dogImage';
+  img.id = "dogImage";
   console.log(img);
 
   let src = document.querySelector("body");
