@@ -2,10 +2,7 @@
   "name": "cat-fact-dog-generator",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "dev": "nodemon index.js",
-    "build": "[my-framework] build --output public"
-  },
+  
   "author": "",
   "license": "ISC",
   "dependencies": {
