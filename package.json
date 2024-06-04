@@ -2,10 +2,14 @@
   "name": "cat-fact-dog-generator",
   "version": "1.0.0",
   "main": "index.js",
-  
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "start":"node index.js",
+    "dev":"nodemon index.js"
+  },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "fetch": "^1.1.0",
     "node-fetch": "^3.3.2"
